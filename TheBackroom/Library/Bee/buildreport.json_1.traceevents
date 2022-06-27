@@ -1,0 +1,506 @@
+﻿{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1656353685960708, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353685963667, "dur": 39925, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353686004109, "dur": 70929, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353686075089, "dur": 407697, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353686482790, "dur": 10513432, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353696996271, "dur": 11142, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353711474063, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353711474525, "dur": 9531, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353711484059, "dur": 32659, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353711516723, "dur": 609380, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353712126107, "dur": 3160283, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353715286395, "dur": 11500, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353715298830, "dur": 178, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1656353711814134, "dur": 283065, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1656353711815877, "dur": 79994, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1656353712070981, "dur": 7521, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1656353712078506, "dur": 18683, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1656353712079715, "dur": 16650, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1656353712104523, "dur": 2191, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1656353712103260, "dur": 3488, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353715299203, "dur": 413, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1656353712165312, "dur":1129, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353712166450, "dur":40, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1656353712166501, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1656353712166523, "dur":710, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1656353712167273, "dur":737, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353712168010, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715115910, "dur":302, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116212, "dur":17, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116230, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116232, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116241, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116243, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116255, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116257, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116265, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116267, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116276, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116278, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116286, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116288, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116296, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116298, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116305, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116307, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116316, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116317, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116325, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116327, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116335, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116337, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116346, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116358, "dur":4, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715116365, "dur":1344, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1656353712173939, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656353712173939, "dur":6285, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656353712180240, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1656353712180371, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656353712219083, "dur":29406, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1656353712248494, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1656353712248564, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656353712248765, "dur":2248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1656353712251015, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1656353712251147, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656353712382170, "dur":2038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1656353712384255, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1656353712384361, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656353712384435, "dur":20365, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1656353712404844, "dur":343180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1656353712748032, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656353712748042, "dur":1887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1656353712749975, "dur":2365942, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712173977, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712173977, "dur":6266, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712180245, "dur":87447, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1656353712267717, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712355912, "dur":30194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1656353712386164, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1656353712386293, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712386302, "dur":83114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1656353712469467, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712469618, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712469628, "dur":69594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712539293, "dur":1980, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712541279, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712541290, "dur":3831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712545173, "dur":620, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712545798, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712545806, "dur":2141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712548013, "dur":705, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712548723, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712548733, "dur":2612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712551413, "dur":945, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712552363, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712552373, "dur":3403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712555852, "dur":326, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712556183, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712556192, "dur":4218, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656353712560487, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656353712560567, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712560576, "dur":2084, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656353712562733, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1656353712562812, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712562821, "dur":1424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1656353712564410, "dur":184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1656353712564599, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656353712564609, "dur":1311, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1656353712565983, "dur":2549927, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656353712174004, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656353712174004, "dur":6229, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656353712180241, "dur":238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1656353712180485, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656353712383084, "dur":7484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1656353712390615, "dur":940301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656353713330924, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656353713331052, "dur":5735, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656353713336839, "dur":1779084, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656353712174042, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656353712174043, "dur":6193, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656353712180244, "dur":199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1656353712180449, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656353712355817, "dur":52855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1656353712408720, "dur":599, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom.exe" }}
+,{ "pid":12345, "tid":4, "ts":1656353712409323, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656353712409330, "dur":1756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom.exe" }}
+,{ "pid":12345, "tid":4, "ts":1656353712411131, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1656353712411278, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656353712411549, "dur":292114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1656353712703713, "dur":2412203, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712174082, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712174083, "dur":6164, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712180247, "dur":54385, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1656353712234637, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712355819, "dur":30147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1656353712386011, "dur":32857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1656353712418873, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712418883, "dur":1170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1656353712420097, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712420247, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712420254, "dur":1049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712421373, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712421534, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712421542, "dur":1568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712423160, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712423313, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712423321, "dur":2048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712425416, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712425576, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712425584, "dur":1010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712426667, "dur":1312, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712427983, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712427991, "dur":2207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712430273, "dur":502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712430781, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712430792, "dur":2074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712432939, "dur":215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712433160, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712433172, "dur":1445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712434685, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712434871, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712434879, "dur":13121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712448056, "dur":280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712448341, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712448350, "dur":2682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712451081, "dur":313, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712451398, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712451406, "dur":87457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712538942, "dur":356, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712539303, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712539312, "dur":2209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712541595, "dur":226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712541826, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712541838, "dur":3577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712545484, "dur":340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712545829, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712545839, "dur":2085, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712547972, "dur":561, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712548539, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712548550, "dur":2077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712550685, "dur":313, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712551003, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712551013, "dur":1679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712552759, "dur":1994, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712554763, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712554775, "dur":2624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712557473, "dur":565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712558042, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712558049, "dur":2684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1656353712560793, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1656353712560858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712560866, "dur":3177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1656353712564119, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1656353712564198, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1656353712564208, "dur":1688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1656353712565989, "dur":2549925, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712174108, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712174109, "dur":6122, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712180241, "dur":82266, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":6, "ts":1656353712262512, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712356042, "dur":26896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":6, "ts":1656353712382990, "dur":2365, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1656353712385360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712385371, "dur":1571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1656353712386999, "dur":121285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712508292, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712508593, "dur":27641, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712536285, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712536466, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712536475, "dur":2891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712539446, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712539678, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712539689, "dur":2202, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712541938, "dur":203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712542145, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712542153, "dur":2840, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712545071, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712545316, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712545326, "dur":1404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712546776, "dur":4825, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712551606, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712551617, "dur":4465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712556157, "dur":7964, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712564127, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1656353712564164, "dur":5517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1656353712569755, "dur":2546170, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1656353712174150, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1656353712174150, "dur":6088, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1656353712180241, "dur":132683, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1656353712312931, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1656353712355918, "dur":31018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1656353712386999, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1656353712387172, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1656353712387185, "dur":293707, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1656353712680943, "dur":2434976, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1656353712174168, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1656353712174169, "dur":6073, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1656353712180243, "dur":285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1656353712180535, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1656353712382962, "dur":18931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1656353712401938, "dur":2643547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1656353715045493, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1656353715045504, "dur":70318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1656353715115870, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":8, "ts":1656353715115875, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712174202, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712174203, "dur":6037, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712180241, "dur":201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":9, "ts":1656353712180448, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712355810, "dur":76389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":9, "ts":1656353712432277, "dur":251, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712432534, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712432546, "dur":1487, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712434077, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712434258, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712434265, "dur":953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712435265, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712435511, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712435518, "dur":12635, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712448203, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712448369, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712448377, "dur":2396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712450819, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712450978, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712450987, "dur":85758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712536790, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712536978, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712536989, "dur":2344, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712539400, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712539637, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712539647, "dur":2316, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712542028, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712542214, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712542222, "dur":2921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712545195, "dur":673, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712545872, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712545880, "dur":2594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712548546, "dur":368, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712548919, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712548955, "dur":2438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712551463, "dur":4859, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712556327, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712556337, "dur":5082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":9, "ts":1656353712561479, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":9, "ts":1656353712561675, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712561685, "dur":1328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":9, "ts":1656353712563093, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/level0.resS" }}
+,{ "pid":12345, "tid":9, "ts":1656353712563170, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1656353712563179, "dur":1439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/level0.resS" }}
+,{ "pid":12345, "tid":9, "ts":1656353712564689, "dur":2551217, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712174223, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712174223, "dur":6011, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712180241, "dur":48541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1656353712228791, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712355837, "dur":30646, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1656353712386527, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":10, "ts":1656353712386642, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712386650, "dur":25556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":10, "ts":1656353712412252, "dur":184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712412440, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712412665, "dur":988, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712413698, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712413840, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712413911, "dur":730, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712414686, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712414851, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712414859, "dur":1035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712415937, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712416093, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712416101, "dur":763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712416908, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712417063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712417070, "dur":1798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712418914, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712419064, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712419072, "dur":1207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712420345, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712420547, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712420555, "dur":1020, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712421623, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712421768, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712421775, "dur":1520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712423342, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712423513, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712423520, "dur":2371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712425961, "dur":245, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712426211, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712426221, "dur":2327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712428600, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712428815, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712428826, "dur":1644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712430522, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712430700, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712430710, "dur":2018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712432788, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712432947, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712433042, "dur":1569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712434683, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712434896, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712434904, "dur":13060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712448016, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712448186, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712448196, "dur":1567, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712449810, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712449962, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712449969, "dur":1591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712451637, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712451804, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712451812, "dur":87402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712539298, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712539559, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712539569, "dur":2111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712541741, "dur":320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712542065, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712542072, "dur":3390, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712545511, "dur":616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712546131, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712546139, "dur":2116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712548325, "dur":1473, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712549804, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712549814, "dur":2532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712552400, "dur":221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712552626, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712552637, "dur":3058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712555781, "dur":683, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712556497, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712556508, "dur":3673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":10, "ts":1656353712560261, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":10, "ts":1656353712560334, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712560442, "dur":2066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":10, "ts":1656353712562591, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/resources.assets" }}
+,{ "pid":12345, "tid":10, "ts":1656353712562676, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712562684, "dur":1628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/resources.assets" }}
+,{ "pid":12345, "tid":10, "ts":1656353712564380, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":10, "ts":1656353712564455, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1656353712564465, "dur":1540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":10, "ts":1656353712566050, "dur":2549862, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712174250, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712174251, "dur":6009, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712180260, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1656353712180455, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712355812, "dur":62377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1656353712418234, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712418412, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712418420, "dur":816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712419282, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712419444, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712419452, "dur":979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712420476, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712420619, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712420628, "dur":1013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712421692, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712421842, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712421850, "dur":1484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712423391, "dur":212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712423607, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712423615, "dur":2289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712425980, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712426267, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712426278, "dur":2125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712428450, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712428597, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712428605, "dur":1644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712430328, "dur":278, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712430612, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712430624, "dur":2031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712432728, "dur":211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712432944, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712433038, "dur":1783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712434888, "dur":196, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712435114, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712435125, "dur":13213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712448415, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712448662, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712448670, "dur":2477, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712451209, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712451424, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712451435, "dur":87498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712539006, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712539211, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712539223, "dur":2130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712541433, "dur":232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712541669, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712541680, "dur":3588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712545335, "dur":324, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712545665, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712545676, "dur":2024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712547758, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712548014, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712548023, "dur":1800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712549894, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712550109, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712550120, "dur":1844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712552037, "dur":3958, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712556002, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712556013, "dur":4437, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":11, "ts":1656353712560535, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1656353712560612, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1656353712560622, "dur":5426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1656353712566095, "dur":2549808, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712174270, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712174270, "dur":5976, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712180247, "dur":206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1656353712180459, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712355759, "dur":71504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1656353712427313, "dur":419, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712427736, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712427744, "dur":1152, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712428943, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712429106, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712429113, "dur":1719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712430895, "dur":275, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712431175, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712431185, "dur":1866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712433134, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712433349, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712433357, "dur":1669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712435093, "dur":254, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712435351, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712435359, "dur":13006, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712448413, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712448586, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712448594, "dur":2544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712451208, "dur":212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712451425, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712451435, "dur":87476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712538986, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712539213, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712539223, "dur":1839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712541131, "dur":291, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712541427, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712541438, "dur":3310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712544822, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712545054, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712545065, "dur":1365, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712546478, "dur":325, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712546808, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712546815, "dur":1710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712548597, "dur":391, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712548994, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712549004, "dur":2280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712551354, "dur":268, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712551627, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712551638, "dur":3163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712554880, "dur":400, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712555286, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712555299, "dur":2215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712557583, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712557787, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712557800, "dur":4301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":12, "ts":1656353712562178, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":12, "ts":1656353712562384, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712562393, "dur":1471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":12, "ts":1656353712563937, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/level0" }}
+,{ "pid":12345, "tid":12, "ts":1656353712564016, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1656353712564025, "dur":1614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/level0" }}
+,{ "pid":12345, "tid":12, "ts":1656353712565705, "dur":2550202, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656353715276046, "dur":2321, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1656353715299744, "dur": 1613, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656353715298787, "dur": 2615, "ph": "X", "name": "Write chrome-trace events", "args": {} },

@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour{
 	private Transform playerBody;                                                               //Corp du joueur
 	private CharacterController playerConstroller;                                              //Controlleur du joueur
 	private PlayerStatus playerStatus;                                                          //Status du joueur
-	private PlayerStats playerStats;                                                            //Stats du joueur (pour la vitesse actuel)
+	private PlayerStats playerStats;                                                            //Stats du joueur (pour la vitesse actuel et la stamina du jump)
 
 	private float crouchCoef = 0.5f;															//Coef de vitesse de l'accroupissement
 	private float sprintCoef = 2f;                                                              //Coef de vitesse du sprint
@@ -18,7 +18,9 @@ public class PlayerMovement : MonoBehaviour{
 	private float gravity = -9f;                                                                //Gravité
 
 	private float normalHeight = 2;                                                             //Hauteur du joueur normal
-	private float crouchHeight = 1;																//Hauteur du joueur accroupis
+	private float crouchHeight = 1;                                                             //Hauteur du joueur accroupis
+
+	private float jumpStaminaConsumption = 10f;													//Consomation de stamina par le jump
 
 	private Vector3 velocity;																	//Vélocité du joueur
 
@@ -38,7 +40,11 @@ public class PlayerMovement : MonoBehaviour{
 			playerConstroller.height = crouchHeight;
 		} else {																					//Sinon
 			playerConstroller.height = normalHeight;
-			if(jump && !playerStatus.isFalling) velocity.y = jumpForce;                                 //Si on veux sauté ET que le joueur ne tombe pas => Application du saut
+			if(jump && !playerStatus.isFalling && playerStats.currentStamina > jumpStaminaConsumption) {//Si on veux sauté ET que le joueur ne tombe pas ET que le joueur a assez de stamina
+				velocity.y = jumpForce;                                                                     //On lui donne une force de saut
+				playerStats.currentStamina -= jumpStaminaConsumption;                                       //On enlève la stamina
+			}
+			
 		}
 
 

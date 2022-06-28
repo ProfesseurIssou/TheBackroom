@@ -94,7 +94,7 @@ public class PlayerStats : MonoBehaviour{
 	private float minSpeed = 0;
 	private float maxSpeed = 100;
 	public float currentSpeed = 1;                                                          //Vitesse actuel
-	private float baseSpeed = 2.5f;															//Vitesse de base
+	private float baseSpeed = 5f;															//Vitesse de base
 	/*#####*/
 
 	/*EFFECT*/

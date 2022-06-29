@@ -66,6 +66,8 @@
     <Compile Include="Assets\Script\PlayerView.cs" />
     <Compile Include="Assets\Script\PlayerStats.cs" />
     <Compile Include="Assets\Script\SceneTeleporter.cs" />
+    <Compile Include="Assets\Script\Item.cs" />
+    <Compile Include="Assets\Script\PlayerGUIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

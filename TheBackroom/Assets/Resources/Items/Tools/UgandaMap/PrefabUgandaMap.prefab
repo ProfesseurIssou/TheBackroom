@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 861309794397595135}
   - component: {fileID: 4901772631703657681}
   - component: {fileID: 2409852272329225562}
+  - component: {fileID: 5119216230965263626}
   m_Layer: 0
   m_Name: PrefabUgandaMap
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,6 +64,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5119216230965263626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488576930863998247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3549309c27d1548af5d599d1ea3a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
 --- !u!1001 &7397830641290619647
 PrefabInstance:
   m_ObjectHideFlags: 0

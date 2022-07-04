@@ -3,29 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
-	Gestion des Items 
+	Gestion des données d'items 
 */
 public enum ItemType {
 		None,
 		UgandaMap
 }
 
-public class Item : MonoBehaviour{
-
-
+public class Item{
 	public ItemType type = ItemType.None;												//Type de l'item
 	
 	public string name;																	//Nom de l'item
 	public string description;															//Description de l'item
 	public string uiName;                                                               //Nom de l'UI associer a l'item (laisser "" pour rien)
 	public int durability;																//Durabilité de l'objet
-	public List<Effect> effectsOnHand;													//Liste des effets en main
+	public List<Effect> effectsOnHand = new List<Effect>();								//Liste des effets en main
 
 	public GameObject itemPrefab;														//Prefab de l'item
-	public Sprite miniature;															//Miniature de l'item
+	public Sprite miniature;                                                            //Miniature de l'item
 
 	/*----INIT----*/
-	void Start(){
+	public Item(ItemType itemType) {
+		type = itemType;																	//Type d'item
 		switch(type) {																		//Pour chaque type d'item
 			case ItemType.UgandaMap:                                                            //UgandaMap
 				name = "Uganda Map";
@@ -42,8 +41,17 @@ public class Item : MonoBehaviour{
 				itemPrefab = Resources.Load<GameObject>("Items/Tools/UgandaMap/PrefabUgandaMap");
 				break;
 		}
-	}	
-	//Chargement a partir d'un ancien Item
+	}
+	public Item(Item oldItem) {
+		type = oldItem.type;
+		name = oldItem.name;
+		description = oldItem.description;
+		uiName = oldItem.uiName;
+		durability = oldItem.durability;
+		effectsOnHand = oldItem.effectsOnHand;
+		miniature = oldItem.miniature;
+		itemPrefab = oldItem.itemPrefab;
+	}
 	public void LoadItem(Item oldItem) {
 		type = oldItem.type;
 		name = oldItem.name;
@@ -55,13 +63,7 @@ public class Item : MonoBehaviour{
 		itemPrefab = oldItem.itemPrefab;
 	}
 	/*------------*/
-	
-	
-
-	//void Update(){
-	//}
-
-	
+		
 
 	/*----HAND----*/
 	//Mettre l'item dans la main (activé les effets, activé l'UI)
@@ -112,13 +114,4 @@ public class Item : MonoBehaviour{
 		return name;
 	}
 	/*--------------*/
-
-	
-
-	
-	//Suppression de l'item
-	public void Delete() {
-		Destroy(this.gameObject);                                   //Destrution de l'item sur la map
-	}
-
 }

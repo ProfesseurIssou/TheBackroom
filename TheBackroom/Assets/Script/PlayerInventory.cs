@@ -39,10 +39,29 @@ public class PlayerInventory : MonoBehaviour{
 	private BagType backpackType = BagType.None;															//Par defaut pas de sac
 	private List<Item> inventory = new List<Item>() { null, null, null, null, null, null, null, null, null, null, null, null };//Inventaire
 
+	private PlayerHand hand;                                                                                //Main du joueur
+	private PlayerGUIManager GUIManager;																	//Gestionnaire de GUI
 
-	//Affichage de l'inventaire
-	public void DisplayInventory(bool displayed) {
-		InventoryGUI.SetActive(displayed);																	//Definition de l'affichage de l'inventaire
+	private void Start() {
+		hand = transform.GetComponent<PlayerHand>();                                                            //Recuperation de la main du joueur
+		GUIManager = transform.GetComponent<PlayerGUIManager>();                                                //Gestionnaire de GUI
+	}
+
+	//Ouverture de l'inventaire
+	public void OpenInventory() {
+		InventoryGUI.SetActive(true);                                                                       //Definition de l'affichage de l'inventaire
+		GUIManager.OpenGUI();                                                                               //Ouverture d'un GUI
+		GUIManager.SetInventoryOpen(true);                                                                  //Inventaire ouvert
+		UpdateInventoryItem();																				//Mise a jour des items de l'inventaire
+	}
+	//Fermetue de l'inventaire
+	public void CloseInventory() {
+		InventoryGUI.SetActive(false);                                                                      //Definition de l'affichage de l'inventaire
+		GUIManager.CloseGUI();                                                                              //Fermeture d'un GUI
+		GUIManager.SetInventoryOpen(false);                                                                 //Inventaire ouvert
+	}
+	//Mise a jour de l'inventaire
+	private void UpdateInventoryItem() {
 		for(int i=0; i<12; i++) {																			//Pour chaque slot de l'inventaire
 			if(inventory[i] != null) {                                                                          //Si il y a un item
 				ItemsGUI[i].gameObject.SetActive(true);																//Activation du slot 
@@ -112,9 +131,14 @@ public class PlayerInventory : MonoBehaviour{
 	}
 	//Lacher l'objet
 	public void DropFromInventory(int itemPos) {
-		GameObject newObjet = Instantiate(inventory[itemPos].itemPrefab, transform.position, Quaternion.identity).gameObject;//Instantiation de l'objet
+		GameObject newObjet = Instantiate(inventory[itemPos].itemPrefab, transform.position + (transform.forward * 0.5f), transform.rotation).gameObject;//Instantiation de l'objet
 		newObjet.GetComponent<Item3D>().LoadItem(inventory[itemPos]);												//Chargement des données de l'item
 		inventory[itemPos] = null;																					//Suppression de l'inventaire
+	}
+
+	//Recuperer les données d'un item
+	public Item GetItem(int itemPos) {
+		return inventory[itemPos];
 	}
 
 
@@ -122,19 +146,18 @@ public class PlayerInventory : MonoBehaviour{
 	public void ClickOnInventoryItem(ClickType clickType, int itemPos) {
 		if(inventory[itemPos] != null) {																//Si l'item existe
 			switch(clickType) {																				//Pour chaque type de clique
-				case ClickType.Left:																			//Si clique gauche
-					//guiManager.PutInHand(inventory[itemPos]);														//Mettre l'objet dans la main
-					//inventory[itemPos] = null;																		//On retire l'objet de l'inventaire
-					//guiManager.CloseInventory();																	//Fermeture de l'inventaire
+				case ClickType.Left:                                                                            //Si clique gauche
+					CloseInventory();																				//On ferme l'inventaire
+					hand.PutInHand(itemPos);                                                                        //On met l'objet dans la main
 					break;
-				case ClickType.Right:																			//Si clique droit
+				case ClickType.Right:                                                                           //Si clique droit
 					DropFromInventory(itemPos);																		//On jete l'item
+					UpdateInventoryItem();																			//Mise a jour des objets de l'inventaire
 					break;
 				case ClickType.Middle:																			//Si clique central
 					//Selection d'un objet pour le craft
 					break;
 			}
-			DisplayInventory(true);																			//Pour mettre a jour l'inventaire
 		}
 	}
 }

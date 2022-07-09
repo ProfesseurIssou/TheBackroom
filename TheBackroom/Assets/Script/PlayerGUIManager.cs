@@ -47,7 +47,8 @@ public class PlayerGUIManager : MonoBehaviour {
 	/*MOVEMENT*/
 	private PlayerMovement playerMovement;                                      //Gestion du mouvement du joueur
 	private PlayerView playerView;                                              //Gestion du mouvement de camera du joueur
-	private PlayerInteraction playerInteraction;								//Gestion des interactions du joueur
+	private PlayerInteraction playerInteraction;                                //Gestion des interactions du joueur
+	private PlayerHand hand;													//Main du joueur
 	/*########*/
 
 	/*HAND*/
@@ -61,6 +62,7 @@ public class PlayerGUIManager : MonoBehaviour {
 		playerMovement = this.GetComponent<PlayerMovement>();                           //Gestion du mouvement du joueur
 		playerView = this.GetComponent<PlayerView>();                                   //Gestion de la camera du joueur
 		playerInteraction = this.GetComponent<PlayerInteraction>();                     //Gestion des interactions du joueur
+		hand = this.GetComponent<PlayerHand>();											//Main du joueur
 		inputs = new Inputs();
 	}
 
@@ -81,19 +83,26 @@ public class PlayerGUIManager : MonoBehaviour {
 
 		/*LOGIC*/
 		if(inputs.tab) {                                                                //Si on appuie sur tab
-			if(!inventoryOpen) {															//Si inventaire pas ouvert
-				inventoryOpen = true;                                                           //Ouverture de l'inventaire
-				OpenGUI();																		//Ouverture d'une interface
-				inventory.DisplayInventory(true);                                               //Ouverture de l'inventaire
-				playerView.canMove = false;                                                     //Ne peut plus bouger la camera
-				playerInteraction.canTakeItem = false;											//Ne peut plus prendre d'objet
-			} else {																		//Sinon inventaire ouvert
-				inventoryOpen = false;                                                          //Fermeture de l'inventaire
-				CloseGUI();                                                                     //Fermeture d'une interface
-				inventory.DisplayInventory(false);                                              //Fermeture de l'inventaire
-				playerView.canMove = true;                                                      //Peut bouger la camera
-				playerInteraction.canTakeItem = true;											//Peut prendre des objets
+			if(objectInHand) {                                                              //Si il y a un objet dans la main
+				if(nbOpenGUI == 0) {                                                            //Si l'interface de l'objet n'est pas ouvert
+					objectInHand = false;															//Aucun objet dans la main
+					hand.RemoveFromHand();                                                          //On range l'objet de la main
+					UpdatePlayerAction(true, true, true);                                           //Modification des actions disponible du joueur (camera, interaction, mouvement)
+				}
+			} else {																		//Sinon pas d'objet dans la main
+				if(!inventoryOpen) {                                                            //Si inventaire pas ouvert
+					inventory.OpenInventory();														//On ouvre l'inventaire
+					UpdatePlayerAction(false, false, true);											//Modification des actions disponible du joueur (camera, interaction, mouvement)
+				} else {                                                                        //Sinon inventaire ouvert
+					inventory.CloseInventory();                                                     //On ferme l'inventaire
+					UpdatePlayerAction(true, true, true);                                           //Modification des actions disponible du joueur (camera, interaction, mouvement)
+				}				
 			}
+		}
+
+		if(objectInHand) {																		//Si il y a un objet dans la main
+			UpdatePlayerAction(true, false, true);													//Le joueur peut voir, Ne peut pas prendre d'objet, Peut bouger
+			cursorManager.SetVisibleCursor(false);													//On cache le curseur
 		}
 
 		//if(objectInHand) {                                                              //Si objet dans la main
@@ -115,7 +124,7 @@ public class PlayerGUIManager : MonoBehaviour {
 		//	}
 		//}
 
-		//if(objectInHand || nbOpenGUI>0) {                                               //Si il y a quelque chose en main OU qu'il y a un GUI ouvert
+		//if(objectInHand || nbOpenGUI > 0) {                                               //Si il y a quelque chose en main OU qu'il y a un GUI ouvert
 		//	InteractWithEnvironment.handActive = false;                                     //On désactive la main
 		//} else {                                                                        //Sinon
 		//	InteractWithEnvironment.handActive = true;                                      //On active la main
@@ -124,62 +133,23 @@ public class PlayerGUIManager : MonoBehaviour {
 
 		/*#####*/
 
-		/*RENDER*/
-		//inventory.UpdateInventory();                                                    //Mise a jour de l'ui de l'inventaire
-		/*######*/
-
-		/*CACHE*/
-		inputs.mouseLeftClickCache = inputs.mouseLeftClick;                             //On enregistre l'etat du clique gauche
-		inputs.tabCache = inputs.tab;                                                   //On enregistre l'etat du tab
-		/*#####*/
 	}
 
+	//Mise a jour des actions du joueur
+	public void UpdatePlayerAction(bool view, bool takeObject, bool movement) {
+		playerMovement.canMove = movement;
+		playerInteraction.canTakeItem = takeObject;
+		playerView.canMove = view;
+	}
 
-	/*INVENTORY*/
-	//public void OpenInventory() {
-	//	inventoryOpen = true;                                                           //Ouverture de l'inventaire
-	//	inventory.EnableGUI(true);                                                      //Ouverture du GUI
-	//	OpenGUI();                                                                      //Ouverture du GUI
-	//}
-	//public void CloseInventory() {
-	//	inventoryOpen = false;                                                          //Fermeture d'inventaire
-	//	inventory.EnableGUI(false);                                                     //Fermeture du GUI
-	//	CloseGUI();                                                                     //Fermeture du GUI
-	//}
-	/*#########*/
-
-	/*INTERACTION*/
-	//Check de l'interaction avec l'environment
-	//private void CheckInteract() {
-	//	Item3D newItem = InteractWithEnvironment.GetItem();                             //Recuperation de l'item
-	//	if(newItem == null) return;                                                     //Si il n'y a pas d'item => Fin
-	//	bool result = inventory.AddToInventory(newItem.item);                           //On enregistre l'item dans l'inventaire
-	//	if(result) newItem.Delete();                                                    //Si mise en inventaire reussi => Destruction de l'item sur la map
-	//}
-	/*###########*/
-
-	/*HAND*/
-	//Utilisation de l'Objet en mains
-	//public void UseItem(Inputs inputs) {
-	//	objectHand.GetComponent<Item3D>().item.Use(inputs);                             //Utilisation de l'objet
-	//}
-	//Mettre un objet dans la main
-	//public void PutInHand(Item item) {
-	//	objectInHand = true;                                                            //Objet en main
-	//	Item newItem = new Item(item);                                                  //Copie de l'item
-	//	objectHand = Instantiate(newItem.itemPrefab,Hand.transform).gameObject;         //Creation de l'objet
-	//	objectHand.GetComponent<Item3D>().LoadItem(newItem);                            //Chargement des données de l'item dans l'objet 3D
-	//	Destroy(objectHand.GetComponent<Rigidbody>());                                  //On retire le physique
-	//	objectHand.GetComponent<Item3D>().item.LoadUI();                                //Chargement de l'UI de l'item
-	//}
-	//Retirer l'objet de la main
-	//public void RemoveFromHand() {
-	//	objectInHand = false;                                                           //Pas d'objet en main
-	//	objectHand.GetComponent<Item3D>().item.UnloadUI();                              //Dechargement de l'UI de l'item
-	//	inventory.AddToInventory(objectHand.GetComponent<Item3D>().item);               //On ajoute l'item de la main dans l'inventaire
-	//	Destroy(objectHand);                                                            //Destruction de l'objet en main
-	//}
-	/*####*/
+	//Definition de si il y a un objet en main
+	public void SetObjectInHand(bool value) {
+		objectInHand = value;
+	}	
+	//Definition de si l'inventaire est ouvert
+	public void SetInventoryOpen(bool value) {
+		inventoryOpen = value;
+	}
 
 
 	//Signalisation d'ouverture d'un GUI

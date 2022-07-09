@@ -106,7 +106,16 @@ public class Item{
 	}
 	/*-----------*/
 
-
+	/*----UI----*/
+	//Mise en place de l'UI
+	public void LoadUI() {
+		if(uiName != null) GameObject.Find("Player").transform.Find("GUI/" + uiName).gameObject.SetActive(true); //Si l'item a une UI -> Activation de l'UI de l'item
+	}
+	//Déchargement de l'UI
+	public void UnloadUI() {
+		if(uiName != null) GameObject.Find("Player").transform.Find("GUI/" + uiName).gameObject.SetActive(false); //Si l'item a une UI -> Désactivation de l'UI de l'item
+	}
+	/*----------*/
 
 	/*----GETTER----*/
 	//Recuperation du nom (par exemple pour les batterie il y aura le nom plus le pourcentage)

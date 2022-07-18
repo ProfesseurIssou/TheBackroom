@@ -67,12 +67,14 @@
     <Compile Include="Assets\Script\DebugFPSDisplay.cs" />
     <Compile Include="Assets\Script\PlayerBlackscreen.cs" />
     <Compile Include="Assets\Script\Item.cs" />
+    <Compile Include="Assets\Script\UgandaMapCurrentLevel.cs" />
     <Compile Include="Assets\Script\PlayerInventory.cs" />
     <Compile Include="Assets\Script\PlayerView.cs" />
     <Compile Include="Assets\Script\PlayerStats.cs" />
     <Compile Include="Assets\Script\Item3D.cs" />
     <Compile Include="Assets\Script\SceneTeleporter.cs" />
     <Compile Include="Assets\Script\PlayerGUIManager.cs" />
+    <Compile Include="Assets\Script\PlayerGetUpChecker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

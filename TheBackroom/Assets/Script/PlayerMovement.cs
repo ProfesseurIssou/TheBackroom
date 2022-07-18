@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour{
 	private float normalHeight = 2;                                                             //Hauteur du joueur normal
 	private float crouchHeight = 1;                                                             //Hauteur du joueur accroupis
 
-	private float jumpStaminaConsumption = 10f;													//Consomation de stamina par le jump
+	private float jumpStaminaConsumption = 5f;													//Consomation de stamina par le jump
 
 	private Vector3 velocity;																	//Vélocité du joueur
 
@@ -47,7 +47,6 @@ public class PlayerMovement : MonoBehaviour{
 					velocity.y = jumpForce;                                                                     //On lui donne une force de saut
 					playerStats.currentStamina -= jumpStaminaConsumption;                                       //On enlève la stamina
 				}
-			
 			}
 
 

@@ -8,6 +8,7 @@ using UnityEngine;
 
 public class PlayerMovementStatus: MonoBehaviour{
 	private PlayerFallingChecker playerFallingChecker;                                              //Checker de si le joueur tombe
+	private PlayerGetUpChecker playerGetUpChecker;													//Checker de si le joueur peut ce relevé
 	private PlayerStats playerStats;                                                                //Stats du joueur
 	private Transform playerBody;																	//Corp du joueur
 
@@ -17,6 +18,7 @@ public class PlayerMovementStatus: MonoBehaviour{
 
 	void Start() {
 		playerFallingChecker = GetComponent<PlayerFallingChecker>();
+		playerGetUpChecker = GetComponent<PlayerGetUpChecker>();
 		playerStats = GetComponent<PlayerStats>();
 		playerBody = this.transform;
 	}
@@ -34,7 +36,10 @@ public class PlayerMovementStatus: MonoBehaviour{
 		/*#######*/
 
 		/*CROUCH*/
-		SetCrouch(crouchKey);                                                                           //Definition de si le joueur s'accroupis
+		if(isCrouch && !crouchKey && playerGetUpChecker.canGetUp)                                       //Si le joueur est accroupi ET qu'il veut se relever ET qu'il peut se relever
+			SetCrouch(false);                                                                               //Le joueur ce releve
+		if(!isCrouch && crouchKey)                                                                      //Si le joueur n'est pas accroupi ET qu'il veut s'accroupir
+			SetCrouch(true);                                                                                //Le joueur s'accroupit
 		if(isCrouch) SetRunning(false);																	//Si le joueur est accroupis => Ne coure pas
 		/*######*/
 

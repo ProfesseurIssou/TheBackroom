@@ -2,27 +2,34 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - DebugFPSDisplay
+    - Item3D
     - PlayerBlackscreen
     - PlayerCursorManager
     - PlayerFallingChecker
+    - PlayerGUIManager
+    - PlayerHand
+    - PlayerInteraction
+    - PlayerInventory
+    - PlayerInventoryClickItem
     - PlayerMovement
+    - PlayerMovementStatus
     - PlayerSceneManage
     - PlayerStats
-    - PlayerStatus
     - PlayerView
     - SceneTeleporter
+    - UgandaMapCurrentLevel
     Unity.CollabProxy.Editor.dll:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
-    - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -31,8 +38,13 @@ ScriptsOnlyBuild:
     UnityEngine.CoreModule:
     - UnityEngine.Events.PersistentCallGroup
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
   methodsToPreserve: []
   sceneClasses:
     Assets/Scenes/Levels/level_0.unity:
@@ -54,6 +66,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -69,33 +83,53 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1550}
+      Script: {instanceID: 1552}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 1664}
     - Class: 114
-      Script: {instanceID: 5346}
+      Script: {instanceID: 1864}
     - Class: 114
-      Script: {instanceID: 5652}
+      Script: {instanceID: 1870}
     - Class: 114
-      Script: {instanceID: 25238}
+      Script: {instanceID: 2450}
     - Class: 114
-      Script: {instanceID: 26284}
+      Script: {instanceID: 2588}
     - Class: 114
-      Script: {instanceID: 26926}
+      Script: {instanceID: 2804}
     - Class: 114
-      Script: {instanceID: 41610}
+      Script: {instanceID: 3084}
     - Class: 114
-      Script: {instanceID: 42768}
+      Script: {instanceID: 3194}
     - Class: 114
-      Script: {instanceID: 49456}
+      Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 79828}
+      Script: {instanceID: 3756}
     - Class: 114
-      Script: {instanceID: 87032}
+      Script: {instanceID: 4784}
     - Class: 114
-      Script: {instanceID: 87056}
+      Script: {instanceID: 4892}
     - Class: 114
-      Script: {instanceID: 87060}
+      Script: {instanceID: 5354}
+    - Class: 114
+      Script: {instanceID: 5368}
+    - Class: 114
+      Script: {instanceID: 5674}
+    - Class: 114
+      Script: {instanceID: 6146}
+    - Class: 114
+      Script: {instanceID: 6280}
+    - Class: 114
+      Script: {instanceID: 6848}
+    - Class: 114
+      Script: {instanceID: 6926}
+    - Class: 114
+      Script: {instanceID: 7168}
+    - Class: 114
+      Script: {instanceID: 7592}
+    - Class: 114
+      Script: {instanceID: 7840}
+    - Class: 114
+      Script: {instanceID: 36334}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -166,6 +200,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: 02c8e71b00746019ac0be22558822b2d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -194,6 +234,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseExitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 8ede4b4e54262c9d2181b0e7340c4758
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerInventoryClickItem
+  - hash:
+      serializedVersion: 2
+      Hash: b7a713e9525d48ad70f28579d3cd7942
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovementStatus
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -236,6 +288,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: da109d3d750f06b777b942ae84fcb1d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerCursorManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -371,6 +429,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerSceneManage
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollMessageListener
@@ -418,6 +482,12 @@ ScriptsOnlyBuild:
     className: UnityOnControllerColliderHitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerHand
+  - hash:
+      serializedVersion: 2
       Hash: 27ec3360f0c0a6803ba71cc3106480b8
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -446,6 +516,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 627b72d77b27dc04c8578705972748f3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerFallingChecker
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -568,6 +644,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 1a3a6f6d305c8cc39b21053069febfe5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerInteraction
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -584,6 +666,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 3a0b7f43df76db37a3b741db3430ada6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DebugFPSDisplay
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -650,6 +738,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnDeselectMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 7735db89e8bb39b0c8b8128ea30f2846
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerBlackscreen
   - hash:
       serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
@@ -722,6 +816,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 1e9febc98487809fdf8a0f08f9896f58
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerInventory
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -802,6 +902,12 @@ ScriptsOnlyBuild:
     className: UnityOnScrollRectValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 36f9eb194b90c064559029252eddb442
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerView
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -820,6 +926,12 @@ ScriptsOnlyBuild:
     className: UnityOnSubmitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 6f0ba00f99eb2ce431500fb05d3c6b3f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerStats
+  - hash:
+      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -836,6 +948,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMoveMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 284f5d9bdaed2e2fa4d300ea0adcd718
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Item3D
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -874,6 +992,12 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
+      Hash: 51130f045a2aecd7a395f8d39e7379bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneTeleporter
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -884,6 +1008,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerGUIManager
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
@@ -916,64 +1046,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ced234e74aef01bdc87839affb7a4ea5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerView
-  - hash:
-      serializedVersion: 2
-      Hash: da109d3d750f06b777b942ae84fcb1d7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerCursorManager
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerMovement
-  - hash:
-      serializedVersion: 2
-      Hash: b7a713e9525d48ad70f28579d3cd7942
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerStatus
-  - hash:
-      serializedVersion: 2
-      Hash: 6f0ba00f99eb2ce431500fb05d3c6b3f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerStats
-  - hash:
-      serializedVersion: 2
-      Hash: 3a0b7f43df76db37a3b741db3430ada6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DebugFPSDisplay
-  - hash:
-      serializedVersion: 2
-      Hash: 627b72d77b27dc04c8578705972748f3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerFallingChecker
-  - hash:
-      serializedVersion: 2
-      Hash: 51130f045a2aecd7a395f8d39e7379bf
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SceneTeleporter
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerSceneManage
-  - hash:
-      serializedVersion: 2
-      Hash: 7735db89e8bb39b0c8b8128ea30f2846
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerBlackscreen
+    className: UgandaMapCurrentLevel
   platform: 19
   scenePathNames:
   - Assets/Scenes/Levels/level_0.unity

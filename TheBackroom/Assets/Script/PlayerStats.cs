@@ -149,8 +149,12 @@ public class PlayerStats : MonoBehaviour{
 		currentSpeed = statsModifiers.speed;                                                        //Application de la nouvelle vitesse
 		if(currentSpeed > maxSpeed) currentSpeed = maxSpeed;                                        //Si maximum atteint
 		if(currentSpeed < minSpeed) currentSpeed = minSpeed;                                        //Si mimimum atteint
-		if(currentStamina < 5) AddEffect(new Effect("NoStamina", "Tu es épuisé", EffectType.Malus, StatType.Speed, 8f, 1));//Si plus de stamina => Baisse de la vitesse
-
+		if(currentStamina < 5) {                                                                    //Si pas assez de stamina
+			if(!IsEffectPresent("NoStamina"))															//Si l'effet n'est pas encore appliqué
+				AddEffect(new Effect("NoStamina", "Tu es épuisé", EffectType.Malus, StatType.Speed, 2.5f, 1));//Baisse de la vitesse
+		} else {                                                                                    //Sinon assez de stamina
+			RemoveEffect("NoStamina");																	//Suppression de l'effet
+		}
 	}
 
 
@@ -168,12 +172,21 @@ public class PlayerStats : MonoBehaviour{
 		}
 	}
 
+	//Check si un effet est présent
+	public bool IsEffectPresent(string effectName) {
+		for(int i = 0; i < currentEffectList.Count; i++) {                                           //Pour chaque effet de la liste
+			if(currentEffectList[i].name == effectName) {												//Si le nom est le même
+				return true;																				//Retourne true
+			}
+		}
+		return false;                                                                                //Retourne false
+	}
 
 	//Calcul de modification des stats due au effets
 	private StatsModifiers GetStatsModifiers() {
 		StatsModifiers statsModifiers = default(StatsModifiers);                                //Creation d'un nouveau modifiers
 		int effectType;                                                                         //Pour un calcul plus rapide (*-1 ou *1)
-		for(int i = 0; i < currentEffectList.Count; i++) {                                           //Pour chaque effet
+		for(int i = 0; i < currentEffectList.Count; i++) {                                      //Pour chaque effet
 			effectType = ((int)currentEffectList[i].type);                                          //Récupération du type d'effet (bonus ou malus)
 			if(effectType == 0) effectType--;                                                         //Si c'est un malus => -1
 			switch(currentEffectList[i].stat) {                                                     //Pour chaque type de stat

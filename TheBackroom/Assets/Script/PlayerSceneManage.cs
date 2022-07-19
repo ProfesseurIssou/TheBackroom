@@ -46,7 +46,7 @@ public class PlayerSceneManage : MonoBehaviour{
 				StartCoroutine(Teleport("level_0", new Vector3(5, 1, 5)));												//Teleportation
 				break;
 			case Spawn.level_1:																						//Si level_1
-				StartCoroutine(Teleport("level_1", new Vector3(0, 1, 0)));												//Teleportation
+				StartCoroutine(Teleport("level_1", new Vector3(0, 2.5f, 0)));											//Teleportation
 				break;
 		}
 
@@ -57,8 +57,8 @@ public class PlayerSceneManage : MonoBehaviour{
 	//Lancement de la teleportation
 	IEnumerator Teleport(string sceneName, Vector3 position) {
 		yield return new WaitForEndOfFrame();                                                               //Attendre la fin de la frame
+		ChangeScene(sceneName);                                                                             //On passe au niveau suivant		
 		player.transform.position = position;                                                               //Definition de la position pour apparaitre
-		ChangeScene(sceneName);																				//On passe au niveau suivant
 	}
 
 	//Execute le changement de scene

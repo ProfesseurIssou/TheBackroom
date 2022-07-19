@@ -192,17 +192,6 @@
       "DebugActionIndex": 4
     },
     {
-      "Annotation": "CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/level0.resS",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/PlayerDataCache/Win64/Data/level0.resS"
-      ],
-      "Outputs": [
-        "D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/level0.resS"
-      ],
-      "DebugActionIndex": 5
-    },
-    {
       "Annotation": "CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/level1",
       "ActionType": "CopyFiles",
       "Inputs": [
@@ -211,7 +200,7 @@
       "Outputs": [
         "D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/level1"
       ],
-      "DebugActionIndex": 6
+      "DebugActionIndex": 5
     },
     {
       "Annotation": "CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/resources.assets",
@@ -222,7 +211,7 @@
       "Outputs": [
         "D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/resources.assets"
       ],
-      "DebugActionIndex": 7
+      "DebugActionIndex": 6
     },
     {
       "Annotation": "CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/resources.assets.resS",
@@ -233,7 +222,7 @@
       "Outputs": [
         "D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/resources.assets.resS"
       ],
-      "DebugActionIndex": 8
+      "DebugActionIndex": 7
     },
     {
       "Annotation": "CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/RuntimeInitializeOnLoads.json",
@@ -244,7 +233,7 @@
       "Outputs": [
         "D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/RuntimeInitializeOnLoads.json"
       ],
-      "DebugActionIndex": 9
+      "DebugActionIndex": 8
     },
     {
       "Annotation": "CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/ScriptingAssemblies.json",
@@ -255,7 +244,7 @@
       "Outputs": [
         "D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/ScriptingAssemblies.json"
       ],
-      "DebugActionIndex": 10
+      "DebugActionIndex": 9
     },
     {
       "Annotation": "CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets0.assets",
@@ -266,7 +255,7 @@
       "Outputs": [
         "D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets0.assets"
       ],
-      "DebugActionIndex": 11
+      "DebugActionIndex": 10
     },
     {
       "Annotation": "CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets0.assets.resS",
@@ -276,6 +265,17 @@
       ],
       "Outputs": [
         "D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets0.assets.resS"
+      ],
+      "DebugActionIndex": 11
+    },
+    {
+      "Annotation": "CopyFiles D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets0.resource",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/sharedassets0.resource"
+      ],
+      "Outputs": [
+        "D:/Dev/Projets/TheBackroom/TheBackroom/Build/TheBackroom_Data/sharedassets0.resource"
       ],
       "DebugActionIndex": 12
     },

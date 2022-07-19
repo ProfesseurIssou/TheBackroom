@@ -23,8 +23,6 @@ public class PlayerBlackscreen : MonoBehaviour{
 	private TransitionType transitionType;                                              //Type de transition
 
 
-
-
 	void Start() {
 		//Au démarrage, le joueur ce reveil
 		nbTotalSeconde = defaultTotalTransitionSeconde;
@@ -35,6 +33,7 @@ public class PlayerBlackscreen : MonoBehaviour{
 
 	void Update() {
 		if(inTransition) {
+			blackImage.gameObject.SetActive(true);											//On active le calque de transition
 			switch(transitionType) {
 				case TransitionType.ToBlack:
 					SetAlpha(nbCurrentSeconde / nbTotalSeconde);
@@ -45,6 +44,8 @@ public class PlayerBlackscreen : MonoBehaviour{
 			}
 			if(nbCurrentSeconde >= nbTotalSeconde) inTransition = false;
 			nbCurrentSeconde += Time.deltaTime;
+
+			if(!inTransition && transitionType == TransitionType.ToClear) blackImage.gameObject.SetActive(false);//Si la transition ce termine => On désactive le calque (pour que ça ne bloque pas le curseur)
 		}
 	}
 

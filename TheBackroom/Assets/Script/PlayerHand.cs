@@ -10,7 +10,7 @@ public class PlayerHand : MonoBehaviour{
 	private GameObject hand;                                                                            //Main du joueur
 	private PlayerStats playerStats;																	//Stats du joueur
 	private PlayerGUIManager GUIManager;																//Gestionnaire d'UI
-	private PlayerInventory inventory;																	//Inventaire du joueur
+	private PlayerInventory inventory;                                                                  //Inventaire du joueur
 	private int itemIndex;																				//Index de l'item depuis l'inventaire (-1 si aucun item selectionné)
 	
 	void Start(){
@@ -45,5 +45,12 @@ public class PlayerHand : MonoBehaviour{
 			playerStats.RemoveEffect(inventory.GetItem(itemIndex).effectsOnHand[i].name);						//Retrait de l'effet de l'item dans les stats du joueur
 		}
 		itemIndex = -1;                                                                                     //Plus d'objet dans la main
+	}
+
+	//Utilisation de l'objet
+	public void UseItem(Inputs inputs) {
+		if(itemIndex != -1) {                                                                               //Si il y a un objet dans la main
+			inventory.GetItem(itemIndex).Use(inputs, GUIManager);												//Utilisation de l'objet
+		}
 	}
 }

@@ -84,12 +84,14 @@ public class Item{
 
 	/*----USE----*/
 	//Utilisation de l'item
-	public void Use(Inputs inputs) {
+	public void Use(Inputs inputs, PlayerGUIManager playerGUIManager) {
 		switch(type) {                                                              //Pour chaque type d'objet
 			case ItemType.UgandaMap:                                                    //Si UgandaMap
 				if(inputs.mouseLeftClick) {                                                 //Si clique gauche
 					GameObject UI = GameObject.Find("Player").transform.Find("GUI/"+ uiName + "/Buttons").gameObject;//Recherche de l'UI des boutons
 					if(!UI.activeSelf) {                                                        //Si l'UI n'est pas actif
+						playerGUIManager.OpenGUI();                                                 //Ouverture d'un GUI
+						playerGUIManager.UpdatePlayerAction(false, false, true);                    //Le joueur ne peut pas bouger la tete, ne peut pas prende d'objet, peut bouger
 						UI.SetActive(true);                                                         //Affichage des boutons
 						GameObject.Find("Player").GetComponent<PlayerGUIManager>().OpenGUI();       //Ouverture du GUI
 					}
@@ -97,6 +99,8 @@ public class Item{
 				if(inputs.tab || inputs.escape) {                                           //Si Tab OU Echape
 					GameObject UI = GameObject.Find("Player").transform.Find("GUI/" + uiName + "/Buttons").gameObject;//Recherche de l'UI des boutons
 					if(UI.activeSelf) {                                                         //Si l'UI est actif
+						playerGUIManager.UpdatePlayerAction(true, true, true);						//Le joueur peut bouger la tete, peut prende d'objet, peut bouger
+						playerGUIManager.CloseGUI();                                                //Fermeture d'un GUI
 						UI.SetActive(false);                                                        //Cacher les boutons
 						GameObject.Find("Player").GetComponent<PlayerGUIManager>().CloseGUI();      //Ouverture du GUI
 					}

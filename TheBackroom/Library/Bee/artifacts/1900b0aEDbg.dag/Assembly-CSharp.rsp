@@ -363,6 +363,7 @@
 "Assets/Script/PlayerStats.cs"
 "Assets/Script/PlayerView.cs"
 "Assets/Script/SceneTeleporter.cs"
+"Assets/Script/UgandaMapChangeLevel.cs"
 "Assets/Script/UgandaMapCurrentLevel.cs"
 -langversion:9.0
 

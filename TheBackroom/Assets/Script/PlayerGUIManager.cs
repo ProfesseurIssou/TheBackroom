@@ -19,14 +19,6 @@ public class Inputs {
 	public bool shortcut_4;
 	public bool escape;
 	public bool mouseLeftClick;
-
-	public bool tabCache;
-	public bool shortcut_1Cache;
-	public bool shortcut_2Cache;
-	public bool shortcut_3Cache;
-	public bool shortcut_4Cache;
-	public bool escapeCache;
-	public bool mouseLeftClickCache;
 }
 
 public class PlayerGUIManager : MonoBehaviour {
@@ -50,11 +42,6 @@ public class PlayerGUIManager : MonoBehaviour {
 	private PlayerInteraction playerInteraction;                                //Gestion des interactions du joueur
 	private PlayerHand hand;													//Main du joueur
 	/*########*/
-
-	/*HAND*/
-	//public GameObject Hand;                                                         //Main du joueur
-	//private GameObject objectHand = null;                                           //Objet dans la main
-	/*####*/
 
 	void Start() {
 		cursorManager = this.GetComponent<PlayerCursorManager>();                       //Recuperation du gestionnaire de curseur
@@ -82,6 +69,7 @@ public class PlayerGUIManager : MonoBehaviour {
 		/*######*/
 
 		/*LOGIC*/
+		//Ouverture / fermeture de l'inventaire, mettre l'objet de la main dans l'inventaire
 		if(inputs.tab) {                                                                //Si on appuie sur tab
 			if(objectInHand) {                                                              //Si il y a un objet dans la main
 				if(nbOpenGUI == 0) {                                                            //Si l'interface de l'objet n'est pas ouvert
@@ -100,7 +88,13 @@ public class PlayerGUIManager : MonoBehaviour {
 			}
 		}
 
-		if(objectInHand) {																		//Si il y a un objet dans la main
+		//Utilisation de l'objet
+		if(objectInHand) {																//Si il y a un objet dans la main
+			hand.UseItem(inputs);															//Utilisation de l'item de la main selon les inputs (peut ne pas avoir d'input mais permet aussi d'executé quand objet en main)
+		}
+
+		//Mise a jour des actions possible du joueur
+		if(objectInHand && nbOpenGUI == 0) {													//Si il y a un objet dans la main ET qu'il n'y a pas d'interface ouverte
 			UpdatePlayerAction(true, false, true);													//Le joueur peut voir, Ne peut pas prendre d'objet, Peut bouger
 			cursorManager.SetVisibleCursor(false);													//On cache le curseur
 		}

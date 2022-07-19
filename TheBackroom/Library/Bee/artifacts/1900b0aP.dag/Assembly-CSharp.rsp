@@ -307,6 +307,7 @@
 "Assets/Script/PlayerBlackscreen.cs"
 "Assets/Script/PlayerCursorManager.cs"
 "Assets/Script/PlayerFallingChecker.cs"
+"Assets/Script/PlayerGetUpChecker.cs"
 "Assets/Script/PlayerGUIManager.cs"
 "Assets/Script/PlayerHand.cs"
 "Assets/Script/PlayerInteraction.cs"

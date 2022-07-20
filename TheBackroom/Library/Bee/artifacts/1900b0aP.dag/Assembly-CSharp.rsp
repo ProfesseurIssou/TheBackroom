@@ -302,6 +302,7 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/DebugFPSDisplay.cs"
+"Assets/Script/Entity/PartyGoerIA.cs"
 "Assets/Script/Item.cs"
 "Assets/Script/Item3D.cs"
 "Assets/Script/LightTwinkle.cs"

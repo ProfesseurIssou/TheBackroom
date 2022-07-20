@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - LightTwinkle
     - MenuSmoothCameraMove
     - MenuTwinkleText
+    - PartyGoerIA
     - PlayerBlackscreen
     - PlayerCursorManager
     - PlayerFallingChecker
@@ -27,6 +28,14 @@ ScriptsOnlyBuild:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -84,9 +93,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2442}
     - Class: 114
-      Script: {instanceID: 7174}
+      Script: {instanceID: 7180}
     - Class: 114
-      Script: {instanceID: 7598}
+      Script: {instanceID: 7604}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -99,6 +108,8 @@ ScriptsOnlyBuild:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
@@ -114,13 +125,81 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1552}
+    - Class: 114
+      Script: {instanceID: 1664}
+    - Class: 114
+      Script: {instanceID: 1864}
+    - Class: 114
+      Script: {instanceID: 1870}
+    - Class: 114
+      Script: {instanceID: 2390}
+    - Class: 114
+      Script: {instanceID: 2454}
+    - Class: 114
+      Script: {instanceID: 2592}
+    - Class: 114
+      Script: {instanceID: 2808}
+    - Class: 114
+      Script: {instanceID: 3088}
+    - Class: 114
+      Script: {instanceID: 3200}
+    - Class: 114
+      Script: {instanceID: 3516}
+    - Class: 114
+      Script: {instanceID: 3766}
+    - Class: 114
+      Script: {instanceID: 4794}
+    - Class: 114
+      Script: {instanceID: 4902}
+    - Class: 114
+      Script: {instanceID: 5364}
+    - Class: 114
+      Script: {instanceID: 5378}
+    - Class: 114
+      Script: {instanceID: 5684}
+    - Class: 114
+      Script: {instanceID: 6156}
+    - Class: 114
+      Script: {instanceID: 6218}
+    - Class: 114
+      Script: {instanceID: 6292}
+    - Class: 114
+      Script: {instanceID: 6860}
+    - Class: 114
+      Script: {instanceID: 6938}
+    - Class: 114
+      Script: {instanceID: 7852}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/menu.unity:
     - Class: 1
@@ -145,6 +224,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -152,6 +233,8 @@ ScriptsOnlyBuild:
     - Class: 83
       Script: {instanceID: 0}
     - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
@@ -180,43 +263,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3088}
     - Class: 114
-      Script: {instanceID: 3198}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 3510}
+      Script: {instanceID: 3200}
     - Class: 114
-      Script: {instanceID: 3760}
+      Script: {instanceID: 3244}
     - Class: 114
-      Script: {instanceID: 4788}
+      Script: {instanceID: 3438}
     - Class: 114
-      Script: {instanceID: 4896}
+      Script: {instanceID: 3516}
     - Class: 114
-      Script: {instanceID: 5358}
+      Script: {instanceID: 3766}
     - Class: 114
-      Script: {instanceID: 5372}
+      Script: {instanceID: 4794}
     - Class: 114
-      Script: {instanceID: 5678}
+      Script: {instanceID: 4902}
     - Class: 114
-      Script: {instanceID: 6150}
+      Script: {instanceID: 5364}
     - Class: 114
-      Script: {instanceID: 6212}
+      Script: {instanceID: 5378}
     - Class: 114
-      Script: {instanceID: 6286}
+      Script: {instanceID: 5684}
     - Class: 114
-      Script: {instanceID: 6854}
+      Script: {instanceID: 6156}
     - Class: 114
-      Script: {instanceID: 6932}
+      Script: {instanceID: 6218}
     - Class: 114
-      Script: {instanceID: 7174}
+      Script: {instanceID: 6292}
     - Class: 114
-      Script: {instanceID: 7598}
+      Script: {instanceID: 6860}
     - Class: 114
-      Script: {instanceID: 7846}
+      Script: {instanceID: 6938}
     - Class: 114
-      Script: {instanceID: 27458}
+      Script: {instanceID: 7180}
     - Class: 114
-      Script: {instanceID: 27494}
+      Script: {instanceID: 7604}
     - Class: 114
-      Script: {instanceID: 27576}
+      Script: {instanceID: 7852}
+    - Class: 114
+      Script: {instanceID: 27454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -488,6 +573,12 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: dd2a36d9b75bc78dfe8976cf4ed01f55
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LightTwinkle
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -518,6 +609,12 @@ ScriptsOnlyBuild:
     className: UnityOnScrollMessageListener
   - hash:
       serializedVersion: 2
+      Hash: b5d98ac7723c76c9bad07d3cb5495920
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuTwinkleText
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -546,6 +643,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 6f7d3991b74ae6d0b72bf328f1319ffe
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuSmoothCameraMove
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1130,22 +1233,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: dd2a36d9b75bc78dfe8976cf4ed01f55
+      Hash: ad355ccca662db3ad09f75e88e857994
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: LightTwinkle
-  - hash:
-      serializedVersion: 2
-      Hash: 6f7d3991b74ae6d0b72bf328f1319ffe
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuSmoothCameraMove
-  - hash:
-      serializedVersion: 2
-      Hash: b5d98ac7723c76c9bad07d3cb5495920
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuTwinkleText
+    className: PartyGoerIA
   platform: 19
   scenePathNames:
   - Assets/Scenes/menu.unity

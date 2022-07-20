@@ -304,6 +304,9 @@
 "Assets/Script/DebugFPSDisplay.cs"
 "Assets/Script/Item.cs"
 "Assets/Script/Item3D.cs"
+"Assets/Script/LightTwinkle.cs"
+"Assets/Script/MenuSmoothCameraMove.cs"
+"Assets/Script/MenuTwinkleText.cs"
 "Assets/Script/PlayerBlackscreen.cs"
 "Assets/Script/PlayerCursorManager.cs"
 "Assets/Script/PlayerFallingChecker.cs"
@@ -319,6 +322,7 @@
 "Assets/Script/PlayerStats.cs"
 "Assets/Script/PlayerView.cs"
 "Assets/Script/SceneTeleporter.cs"
+"Assets/Script/UgandaMapChangeLevel.cs"
 "Assets/Script/UgandaMapCurrentLevel.cs"
 -langversion:9.0
 

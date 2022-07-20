@@ -60,6 +60,7 @@
     <Compile Include="Assets\Script\PlayerInventoryClickItem.cs" />
     <Compile Include="Assets\Script\PlayerMovementStatus.cs" />
     <Compile Include="Assets\Script\PlayerGetUpChecker.cs" />
+    <Compile Include="Assets\Script\UgandaMapChangeLevel.cs" />
     <Compile Include="Assets\Script\PlayerCursorManager.cs" />
     <Compile Include="Assets\Script\PlayerSceneManage.cs" />
     <Compile Include="Assets\Script\PlayerHand.cs" />
@@ -75,7 +76,9 @@
     <Compile Include="Assets\Script\Item3D.cs" />
     <Compile Include="Assets\Script\SceneTeleporter.cs" />
     <Compile Include="Assets\Script\PlayerGUIManager.cs" />
-    <Compile Include="Assets\Script\UgandaMapChangeLevel.cs" />
+    <Compile Include="Assets\Script\LightTwinkle.cs" />
+    <Compile Include="Assets\Script\MenuSmoothCameraMove.cs" />
+    <Compile Include="Assets\Script\MenuTwinkleText.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

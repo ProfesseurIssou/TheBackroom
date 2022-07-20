@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6167024453761684982}
-  - component: {fileID: 9036871970264531568}
+  - component: {fileID: 3119001286410733767}
   m_Layer: 0
   m_Name: lamp
   m_TagString: Untagged
@@ -225,7 +225,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &9036871970264531568
+--- !u!82 &3119001286410733767
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

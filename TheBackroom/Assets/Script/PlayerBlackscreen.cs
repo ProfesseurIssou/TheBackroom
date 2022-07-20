@@ -27,7 +27,7 @@ public class PlayerBlackscreen : MonoBehaviour{
 		//Au démarrage, le joueur ce reveil
 		nbTotalSeconde = defaultTotalTransitionSeconde;
 		nbCurrentSeconde = 0;
-		inTransition = true;
+		inTransition = false;
 		transitionType = TransitionType.ToClear;
 	}
 
